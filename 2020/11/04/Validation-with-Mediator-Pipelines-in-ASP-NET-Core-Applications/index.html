@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/03_validation_exception.png">
 <meta property="og:image" content="https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/04_nuget_mediator_validation_pipeline.png">
 <meta property="article:published_time" content="2020-11-04T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-02-01T23:15:56.054Z">
+<meta property="article:modified_time" content="2024-02-01T23:41:43.324Z">
 <meta property="article:author" content="João Simões">
 <meta property="article:tag" content="dotnetcore">
 <meta property="article:tag" content="aspnetcore">
@@ -192,12 +192,12 @@
 <figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Startup</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ConfigureServices</span>(<span class="params">IServiceCollection services</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        services.AddMvc();</span><br><span class="line"></span><br><span class="line">        services.AddSwaggerGen();</span><br><span class="line"></span><br><span class="line">        services.AddDbContext&lt;ApiDbContext&gt;(o =&gt;</span><br><span class="line">        &#123;</span><br><span class="line">            o.UseInMemoryDatabase(<span class="string">&quot;ApiDbContext&quot;</span>);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        services.AddMediator(o =&gt;</span><br><span class="line">        &#123;</span><br><span class="line">            o.AddPipeline&lt;LoggingPipeline&gt;();</span><br><span class="line">            o.AddPipeline&lt;TimeoutPipeline&gt;();</span><br><span class="line">            o.AddPipelineForValidation(options =&gt;</span><br><span class="line">            &#123;</span><br><span class="line">                options.ValidateCommand = <span class="literal">true</span>;</span><br><span class="line">                options.ValidateEvent = <span class="literal">true</span>;</span><br><span class="line">            &#125;);</span><br><span class="line">            o.AddValidatorsFromAssemblyOf&lt;Startup&gt;();</span><br><span class="line">            o.AddHandlersFromAssemblyOf&lt;Startup&gt;();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>I hope this article gave you a good idea on how to use mediator pipelines to ensure that all your commands, events and even queries are initialized with proper data, either implementing your own pipeline or by using the existing <a target="_blank" rel="noopener" href="https://www.nuget.org/packages/simplesoft.mediator.microsoft.extensions.validationpipeline">ValidationPipeline</a> NuGet.</p>
-<p>I also made an article about <a target="_blank" rel="noopener" href="https://joaoprsimoes.medium.com/transaction-management-with-mediator-pipelines-in-asp-net-core-39317a19bb8d">transaction management with pipelines</a>, you may also find it helpful.</p>
+<p>I also made an article about <a href="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/" title="Transaction Management With Mediator Pipelines in ASP.NET Core">transaction management with pipelines</a>, you may also find it helpful.</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/" data-id="cls3tdoam0000rgjhh7ss1dq9" data-title="Validation with Mediator Pipelines in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/" data-id="cls3w98sv0004pgjhhncvdmqb" data-title="Validation with Mediator Pipelines in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -208,6 +208,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Transaction Management With Mediator Pipelines in ASP.NET Core
+        
+      </div>
+    </a>
   
   
     <a href="/2020/11/02/Using-Mediator-Pipelines-in-ASP-NET-Core-Applications/" id="article-nav-older" class="article-nav-link-wrap">
@@ -269,6 +278,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/">Auditing with Mediator Pipelines in ASP.NET Core</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/">Transaction Management With Mediator Pipelines in ASP.NET Core</a>
+          </li>
         
           <li>
             <a href="/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/">Validation with Mediator Pipelines in ASP.NET Core Applications</a>

@@ -96,6 +96,118 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Auditing-with-Mediator-Pipelines-in-ASP-NET-Core" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/" class="article-date">
+  <time class="dt-published" datetime="2020-11-25T00:00:00.000Z" itemprop="datePublished">2020-11-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tutorial/">tutorial</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/">Auditing with Mediator Pipelines in ASP.NET Core</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <img src="/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/00_header.png" class="post-image">
+
+<blockquote>
+<p>This article was first published on <a target="_blank" rel="noopener" href="https://medium.com/geekculture/auditing-with-mediator-pipelines-in-asp-net-core-be34cf3551b">Medium</a></p>
+</blockquote>
+<p>When implementing a web application, it can be a good idea to enforce some kind of auditing to all of your client interactions, either to track their behavior over time, to ensure any security breach will be properly logged, or just to help analyze system bugs.</p>
+<p>Previously we talked about using the mediator pattern to implement the <strong>Command Query Responsibility Segregation (CQRS)</strong> and <strong>Event Sourcing (ES)</strong> and how pipelines could be used to implement transversal behavior to your application.</p>
+<p>Since commands are responsible to mutate the system state, in this article I’m going to demonstrate how you could implement an audit pipeline to ensure all commands will be stored into a table. Because a variable number of events can be broadcasted when the state changes, the pipeline will also store them into another table and with a reference to the command, ensuring any correlation can be analyzed.</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://code-corner.dev/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/" data-id="cls3w98sq0001pgjhecqzd2v7" data-title="Auditing with Mediator Pipelines in ASP.NET Core" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aspnetcore/" rel="tag">aspnetcore</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/csharp/" rel="tag">csharp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dotnetcore/" rel="tag">dotnetcore</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/patterns/" rel="tag">patterns</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/" class="article-date">
+  <time class="dt-published" datetime="2020-11-07T00:00:00.000Z" itemprop="datePublished">2020-11-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/tutorial/">tutorial</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/">Transaction Management With Mediator Pipelines in ASP.NET Core</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <img src="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/00_header.png" class="post-image">
+
+<blockquote>
+<p>This article was first published on <a target="_blank" rel="noopener" href="https://medium.com/swlh/transaction-management-with-mediator-pipelines-in-asp-net-core-39317a19bb8d">Medium</a></p>
+</blockquote>
+<p>When implementing a <strong>simplified CQRS</strong> service, which usually has a single database but still separates commands from queries, the mediator pipeline can be used to manage transactions when processing commands, ensuring changes will be implicitly committed unless an exception is thrown.</p>
+<p>Implementing a pipeline for transactions has some key advantages even when using Entity Framework Core or other ORM that tracks and flushes changes at a single point in time.</p>
+<p>Because the command handler is executing inside an implicit transaction, the developer is free to flush their changes as it sees fit knowing that any exception will rollback the changes. This is very helpful when it wants to cancel the flow when some business rules aren’t meet and could only be checked after changing the system state. Optimistic concurrency is a good example where you may want to flush your changes before leaving the handler so you know exactly what entity failed and can send a more detailed message to the user, which is the usual approach when implementing a dedicated <strong>Backend for Frontend</strong> service.</p>
+        
+          <p class="article-more-link">
+            <a href="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://code-corner.dev/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/" data-id="cls3w98tb0016pgjh5agwf2jm" data-title="Transaction Management With Mediator Pipelines in ASP.NET Core" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aspnetcore/" rel="tag">aspnetcore</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/csharp/" rel="tag">csharp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dotnetcore/" rel="tag">dotnetcore</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/patterns/" rel="tag">patterns</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/" class="article-date">
@@ -138,7 +250,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/" data-id="cls3tdoam0000rgjhh7ss1dq9" data-title="Validation with Mediator Pipelines in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/" data-id="cls3w98sv0004pgjhhncvdmqb" data-title="Validation with Mediator Pipelines in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -194,7 +306,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://code-corner.dev/2020/11/02/Using-Mediator-Pipelines-in-ASP-NET-Core-Applications/" data-id="cls3jmqur00003sjh7g0j90nc" data-title="Using Mediator Pipelines in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://code-corner.dev/2020/11/02/Using-Mediator-Pipelines-in-ASP-NET-Core-Applications/" data-id="cls3w98sy0005pgjhai5w004y" data-title="Using Mediator Pipelines in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -250,7 +362,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://code-corner.dev/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/" data-id="cls3jmqv4000b3sjh9io5cgyv" data-title="Mediator Pattern in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://code-corner.dev/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/" data-id="cls3w98sm0000pgjhazjr5td8" data-title="Mediator Pattern in ASP.NET Core Applications" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -314,6 +426,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/">Auditing with Mediator Pipelines in ASP.NET Core</a>
+          </li>
+        
+          <li>
+            <a href="/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/">Transaction Management With Mediator Pipelines in ASP.NET Core</a>
+          </li>
         
           <li>
             <a href="/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/">Validation with Mediator Pipelines in ASP.NET Core Applications</a>

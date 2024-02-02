@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://code-corner.dev/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/</loc>
+    
+    <lastmod>2024-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/</loc>
+    
+    <lastmod>2024-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/</loc>
+    
+    <lastmod>2024-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/</loc>
     
     <lastmod>2024-02-01</lastmod>
@@ -19,19 +46,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://code-corner.dev/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/</loc>
-    
-    <lastmod>2024-02-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://code-corner.dev/</loc>
-    <lastmod>2024-02-01</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,28 +57,28 @@
   
   <url>
     <loc>https://code-corner.dev/tags/dotnetcore/</loc>
-    <lastmod>2024-02-01</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/aspnetcore/</loc>
-    <lastmod>2024-02-01</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/csharp/</loc>
-    <lastmod>2024-02-01</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/patterns/</loc>
-    <lastmod>2024-02-01</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -69,7 +87,7 @@
   
   <url>
     <loc>https://code-corner.dev/categories/tutorial/</loc>
-    <lastmod>2024-02-01</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
