@@ -11,6 +11,7 @@
         <category>aspnetcore</category>
         <category>csharp</category>
         <category>patterns</category>
+        <category>efcore</category>
         <item>
             <guid isPermalink="true">https://code-corner.dev/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/</guid>
             <title>Integrating Dapper with Entity Framework Core</title>
