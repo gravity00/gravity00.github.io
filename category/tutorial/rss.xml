@@ -12,6 +12,8 @@
         <category>csharp</category>
         <category>patterns</category>
         <category>efcore</category>
+        <category>dapper</category>
+        <category>dotnet</category>
         <item>
             <guid isPermalink="true">https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/</guid>
             <title>Immutability and Entity Framework Core</title>
@@ -177,6 +179,8 @@
             <category>dotnetcore</category>
             <category>aspnetcore</category>
             <category>csharp</category>
+            <category>efcore</category>
+            <category>dapper</category>
             <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/00_header.png&#34; class=&#34;post-image&#34;&gt;
 

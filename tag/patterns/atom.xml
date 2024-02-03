@@ -9,6 +9,8 @@
     <category term="csharp" />
     <category term="patterns" />
     <category term="efcore" />
+    <category term="dapper" />
+    <category term="dotnet" />
     <entry>
         <id>https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/</id>
         <title>Immutability and Entity Framework Core</title>

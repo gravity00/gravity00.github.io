@@ -13,7 +13,9 @@
             "tags": [
                 "dotnetcore",
                 "aspnetcore",
-                "csharp"
+                "csharp",
+                "efcore",
+                "dapper"
             ]
         },
         {

@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/</loc>
+    <loc>https://code-corner.dev/2023/11/04/Understanding-Flag-Enums-in-C/</loc>
+    
+    <lastmod>2024-02-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/</loc>
     
     <lastmod>2024-02-02</lastmod>
     
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://code-corner.dev/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/</loc>
+    <loc>https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/</loc>
     
     <lastmod>2024-02-02</lastmod>
     
@@ -67,7 +76,7 @@
 
   <url>
     <loc>https://code-corner.dev/</loc>
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,35 +84,49 @@
   
   <url>
     <loc>https://code-corner.dev/tags/dotnetcore/</loc>
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/aspnetcore/</loc>
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/csharp/</loc>
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/patterns/</loc>
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/efcore/</loc>
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/tags/dapper/</loc>
+    <lastmod>2024-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/tags/dotnet/</loc>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -112,7 +135,14 @@
   
   <url>
     <loc>https://code-corner.dev/categories/tutorial/</loc>
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/categories/concepts/</loc>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
