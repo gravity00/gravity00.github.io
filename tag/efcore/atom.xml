@@ -11,6 +11,7 @@
     <category term="efcore" />
     <category term="dapper" />
     <category term="dotnet" />
+    <category term="linq" />
     <entry>
         <id>https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/</id>
         <title>Immutability and Entity Framework Core</title>

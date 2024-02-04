@@ -14,6 +14,7 @@
         <category>efcore</category>
         <category>dapper</category>
         <category>dotnet</category>
+        <category>linq</category>
         <item>
             <guid isPermalink="true">https://code-corner.dev/2023/11/04/Understanding-Flag-Enums-in-C/</guid>
             <title>Understanding Flag Enums in C#</title>
