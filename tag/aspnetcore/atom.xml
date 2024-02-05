@@ -4,11 +4,11 @@
     <title>code-corner.dev • Posts by &#34;aspnetcore&#34; tag</title>
     <link href="https://code-corner.dev" />
     <updated>2023-12-21T00:00:00.000Z</updated>
-    <category term="dotnetcore" />
-    <category term="aspnetcore" />
-    <category term="csharp" />
-    <category term="patterns" />
     <category term="dotnet" />
+    <category term="dotnetcore" />
+    <category term="csharp" />
+    <category term="aspnetcore" />
+    <category term="patterns" />
     <category term="efcore" />
     <category term="dapper" />
     <category term="linq" />
@@ -104,8 +104,8 @@
 &lt;p&gt;I used a SQL Server database as an example, but could be easily anything, like getting settings from an internal API and even Windows registry.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <updated>2023-12-21T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -214,8 +214,8 @@
 &lt;p&gt;As an extended note, this approach can also be easily applied to any other ORM, like NHibernate, as long you can access the underline &lt;code&gt;DbConnection&lt;/code&gt; and current &lt;code&gt;DbTransaction&lt;/code&gt; from the context.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="efcore" />
         <category term="dapper" />
         <updated>2021-03-09T00:00:00.000Z</updated>
@@ -330,8 +330,8 @@
 &lt;p&gt;Soon I’ll be explaining how we can inject more specialized interfaces, like the &lt;code&gt;ISender&amp;lt;TCommand&amp;gt;&lt;/code&gt;, to make our dependencies more clearer and help with unit testing.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-25T00:00:00.000Z</updated>
     </entry>
@@ -405,8 +405,8 @@
 &lt;p&gt;I also made an article about &lt;a href=&#34;/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/&#34; title=&#34;Auditing with Mediator Pipelines in ASP.NET Core&#34;&gt;auditing user actions with pipelines&lt;/a&gt;, you may also find it helpful.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-07T00:00:00.000Z</updated>
     </entry>
@@ -475,8 +475,8 @@
 &lt;p&gt;I also made an article about &lt;a href=&#34;/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/&#34; title=&#34;Transaction Management With Mediator Pipelines in ASP.NET Core&#34;&gt;transaction management with pipelines&lt;/a&gt;, you may also find it helpful.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-04T00:00:00.000Z</updated>
     </entry>
@@ -565,8 +565,8 @@
 &lt;p&gt;For me, this is one of the strongest aspects of the mediator pattern and one of the main reason I always use this pattern even when implementing &lt;strong&gt;minimum viable products&lt;/strong&gt;.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-02T00:00:00.000Z</updated>
     </entry>
@@ -686,8 +686,8 @@
 &lt;p&gt;Soon I’ll be explaining more advanced scenarios, like using the mediator pipeline to validate commands before reaching the handler, managing database transactions or even implementing transversal auditing into you application.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-10-28T00:00:00.000Z</updated>
     </entry>

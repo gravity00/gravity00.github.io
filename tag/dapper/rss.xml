@@ -7,11 +7,11 @@
         <language>en</language>
         <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
         <lastBuildDate>Tue, 09 Mar 2021 00:00:00 +0000</lastBuildDate>
-        <category>dotnetcore</category>
-        <category>aspnetcore</category>
-        <category>csharp</category>
-        <category>patterns</category>
         <category>dotnet</category>
+        <category>dotnetcore</category>
+        <category>csharp</category>
+        <category>aspnetcore</category>
+        <category>patterns</category>
         <category>efcore</category>
         <category>dapper</category>
         <category>linq</category>
@@ -20,8 +20,8 @@
             <title>Integrating Dapper with Entity Framework Core</title>
             <link>https://code-corner.dev/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/</link>
             <category>dotnetcore</category>
-            <category>aspnetcore</category>
             <category>csharp</category>
+            <category>aspnetcore</category>
             <category>efcore</category>
             <category>dapper</category>
             <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>

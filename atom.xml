@@ -4,11 +4,11 @@
     <title>code-corner.dev</title>
     <link href="https://code-corner.dev" />
     <updated>2024-02-05T00:00:00.000Z</updated>
-    <category term="dotnetcore" />
-    <category term="aspnetcore" />
-    <category term="csharp" />
-    <category term="patterns" />
     <category term="dotnet" />
+    <category term="dotnetcore" />
+    <category term="csharp" />
+    <category term="aspnetcore" />
+    <category term="patterns" />
     <category term="efcore" />
     <category term="dapper" />
     <category term="linq" />
@@ -55,9 +55,9 @@
 &lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;In this article we compared the performance of initializing a &lt;code&gt;LinkedList&lt;/code&gt; versus using &lt;code&gt;ToArray&lt;/code&gt; and concluded that, on theory, &lt;code&gt;LinkedList&lt;/code&gt; looked like a good fit when creating short lived collections were enumeration must be forced because of its O(1) nature when appending values, but due to internal optimizations of &lt;code&gt;ToArray&lt;/code&gt; and since indexing is just faster while using less memory it significantly compensates having to allocate multiple arrays and copying their content.&lt;/p&gt;
 &lt;p&gt;Keep in mind that &lt;code&gt;LinkedList&lt;/code&gt; still has its place, specially when storing collections too big to be stored into a single memory section and it’s nice to see that .NET keeps improving its performance.&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <category term="linq" />
         <updated>2024-02-05T00:00:00.000Z</updated>
     </entry>
@@ -120,9 +120,9 @@
 &lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;In this article I explained some of the reasons why Microsoft decided to replace the &lt;strong&gt;Asynchronous Programming Model (APM)&lt;/strong&gt; pattern for the &lt;strong&gt;Task-based Asynchronous Programming&lt;/strong&gt;, which is possible by using classes from the &lt;strong&gt;Task Parallel Library (TPL)&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;I also demonstrated how the classes &lt;code&gt;TaskCompletionSource&lt;/code&gt; and &lt;code&gt;CancellationTokenSource&lt;/code&gt; could be used to convert any asynchronous implementation to tasks, even if based on &lt;strong&gt;Event-based Asynchronous Pattern (EAP)&lt;/strong&gt;, ensuring threads won’t be blocked waiting for responses and even supporting the cancellation of running operations.&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <updated>2024-01-19T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -176,9 +176,9 @@
 &lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;In this article I explained the &lt;strong&gt;dispose pattern&lt;/strong&gt; in .NET, which is used to cleanup and release unmanaged resources from memory, either synchronously by implementing the &lt;code&gt;IDisposable&lt;/code&gt; interface, or asynchronously with &lt;code&gt;IAsyncDisposable&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;For the example we used a simple wrapper for &lt;code&gt;SqlConnection&lt;/code&gt; that holds references to both unmanaged and managed resources, making sure both were properly cleared and an &lt;code&gt;ObjectDisposedException&lt;/code&gt; was thrown if the class was used after being disposed.&lt;/p&gt;
 &lt;figure class=&#34;highlight cs&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;79&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;SqlServerQueryRunner&lt;/span&gt; : &lt;span class=&#34;title&#34;&gt;IDisposable&lt;/span&gt;, &lt;span class=&#34;title&#34;&gt;IAsyncDisposable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; ILogger&amp;lt;SqlServerQueryRunner&amp;gt; _logger;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; SqlConnection _connection;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;bool&lt;/span&gt; _disposed;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;SqlServerQueryRunner&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;        ILogger&amp;lt;SqlServerQueryRunner&amp;gt; logger,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; connectionString&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;    &lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ArgumentNullException.ThrowIfNull(logger);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ArgumentNullException.ThrowIfNull(connectionString);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _logger = logger;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _connection = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; SqlConnection(connectionString);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;keyword&#34;&gt;region&lt;/span&gt; IDisposable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ~SqlServerQueryRunner() =&amp;gt; Dispose(&lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Dispose&lt;/span&gt;()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Dispose(&lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        GC.SuppressFinalize(&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;protected&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;virtual&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Dispose&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;bool&lt;/span&gt; disposing&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(_disposed)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (disposing)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            _connection?.Dispose();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _connection = &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _logger = &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _disposed = &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;keyword&#34;&gt;endregion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;keyword&#34;&gt;region&lt;/span&gt; IAsyncDisposable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;async&lt;/span&gt; ValueTask &lt;span class=&#34;title&#34;&gt;DisposeAsync&lt;/span&gt;()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;await&lt;/span&gt; DisposeAsyncCore().ConfigureAwait(&lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Dispose(&lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        GC.SuppressFinalize(&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;protected&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;virtual&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;async&lt;/span&gt; ValueTask &lt;span class=&#34;title&#34;&gt;DisposeAsyncCore&lt;/span&gt;()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (_disposed)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (_connection &lt;span class=&#34;keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;await&lt;/span&gt; _connection.DisposeAsync().ConfigureAwait(&lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;#&lt;span class=&#34;keyword&#34;&gt;endregion&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ValueTask&lt;/span&gt;&amp;lt;&lt;span class=&#34;title&#34;&gt;IEnumerable&lt;/span&gt;&amp;lt;&lt;span class=&#34;title&#34;&gt;T&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class=&#34;title&#34;&gt;QueryAsync&lt;/span&gt;&amp;lt;&lt;span class=&#34;title&#34;&gt;T&lt;/span&gt;&amp;gt;(&lt;span class=&#34;params&#34;&gt;CancellationToken ct, &lt;span class=&#34;built_in&#34;&gt;string&lt;/span&gt; sql, &lt;span class=&#34;built_in&#34;&gt;object&lt;/span&gt; parameters = &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ObjectDisposedException.ThrowIf(_disposed, &lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _logger.LogDebug(&lt;span class=&#34;string&#34;&gt;&amp;quot;Querying database: &amp;#123;Sql&amp;#125;&amp;quot;&lt;/span&gt;, sql);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// using Dapper for simplicity&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;await&lt;/span&gt; _connection.QueryAsync&amp;lt;T&amp;gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; CommandDefinition(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            sql,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            parameters,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            cancellationToken: ct&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <updated>2024-01-08T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -257,9 +257,9 @@
 &lt;p&gt;Funny enough, when I started to write this article I wanted to cover major features that have been added over the years but then I realized just how big this language is and a single article would be too much, so I ended focusing more on C# 3.0.&lt;/p&gt;
 &lt;p&gt;This clearly calls for more!&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <updated>2023-12-28T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -354,8 +354,8 @@
 &lt;p&gt;I used a SQL Server database as an example, but could be easily anything, like getting settings from an internal API and even Windows registry.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <updated>2023-12-21T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -404,9 +404,9 @@
 &lt;p&gt;Even if the equality operator overload is properly implemented, we can also consider this a small performance increase because executing the ceq operation is faster that a call to the class equality operator.&lt;/p&gt;
 &lt;p&gt;As stated before, this may not affect 99% of your use cases, but for such small a small change in the way you code, why not?&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <updated>2023-12-14T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -561,9 +561,9 @@
 &lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;In this article we compared the performance of &lt;code&gt;ToArray&lt;/code&gt; versus &lt;code&gt;ToList&lt;/code&gt; and concluded the former performs better most of the time by being faster and more memory efficient, so consider using it when creating short lived collections were enumeration must be forced.&lt;/p&gt;
 &lt;p&gt;We also concluded that .NET 8, the version still to be released, will bring fantastic performance upgrades in this regards. Not only it is significantly faster than the older versions, it also brings &lt;code&gt;ToArray&lt;/code&gt; and &lt;code&gt;ToList&lt;/code&gt; so close that it’s almost indifferent which method should be used.&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <category term="linq" />
         <updated>2023-11-09T00:00:00.000Z</updated>
     </entry>
@@ -670,9 +670,9 @@
 
 &lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;I hope this article gave you a good idea on how to use flag enums and bitwise operations to store and check for active flags using a single field, making your application more resource efficient without losing code readability.&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <updated>2023-11-04T00:00:00.000Z</updated>
     </entry>
     <entry>
@@ -939,8 +939,8 @@
 &lt;p&gt;As an extended note, this approach can also be easily applied to any other ORM, like NHibernate, as long you can access the underline &lt;code&gt;DbConnection&lt;/code&gt; and current &lt;code&gt;DbTransaction&lt;/code&gt; from the context.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="efcore" />
         <category term="dapper" />
         <updated>2021-03-09T00:00:00.000Z</updated>
@@ -1055,8 +1055,8 @@
 &lt;p&gt;Soon I’ll be explaining how we can inject more specialized interfaces, like the &lt;code&gt;ISender&amp;lt;TCommand&amp;gt;&lt;/code&gt;, to make our dependencies more clearer and help with unit testing.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-25T00:00:00.000Z</updated>
     </entry>
@@ -1130,8 +1130,8 @@
 &lt;p&gt;I also made an article about &lt;a href=&#34;/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/&#34; title=&#34;Auditing with Mediator Pipelines in ASP.NET Core&#34;&gt;auditing user actions with pipelines&lt;/a&gt;, you may also find it helpful.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-07T00:00:00.000Z</updated>
     </entry>
@@ -1200,8 +1200,8 @@
 &lt;p&gt;I also made an article about &lt;a href=&#34;/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/&#34; title=&#34;Transaction Management With Mediator Pipelines in ASP.NET Core&#34;&gt;transaction management with pipelines&lt;/a&gt;, you may also find it helpful.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-04T00:00:00.000Z</updated>
     </entry>
@@ -1290,8 +1290,8 @@
 &lt;p&gt;For me, this is one of the strongest aspects of the mediator pattern and one of the main reason I always use this pattern even when implementing &lt;strong&gt;minimum viable products&lt;/strong&gt;.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-11-02T00:00:00.000Z</updated>
     </entry>
@@ -1411,8 +1411,8 @@
 &lt;p&gt;Soon I’ll be explaining more advanced scenarios, like using the mediator pipeline to validate commands before reaching the handler, managing database transactions or even implementing transversal auditing into you application.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="patterns" />
         <updated>2020-10-28T00:00:00.000Z</updated>
     </entry>

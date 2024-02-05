@@ -7,11 +7,11 @@
         <language>en</language>
         <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
         <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
-        <category>dotnetcore</category>
-        <category>aspnetcore</category>
-        <category>csharp</category>
-        <category>patterns</category>
         <category>dotnet</category>
+        <category>dotnetcore</category>
+        <category>csharp</category>
+        <category>aspnetcore</category>
+        <category>patterns</category>
         <category>efcore</category>
         <category>dapper</category>
         <category>linq</category>
@@ -19,9 +19,9 @@
             <guid isPermalink="true">https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/</guid>
             <title>.NET — LinkedList vs ToArray</title>
             <link>https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <category>linq</category>
             <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/00_header.png&#34; class=&#34;post-image&#34;&gt;
@@ -68,9 +68,9 @@
             <guid isPermalink="true">https://code-corner.dev/2024/01/19/NET-%E2%80%94-TaskCompletionSource-and-CancellationTokenSource/</guid>
             <title>.NET — TaskCompletionSource and CancellationTokenSource</title>
             <link>https://code-corner.dev/2024/01/19/NET-%E2%80%94-TaskCompletionSource-and-CancellationTokenSource/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2024/01/19/NET-%E2%80%94-TaskCompletionSource-and-CancellationTokenSource/00_header.png&#34; class=&#34;post-image&#34;&gt;
 
@@ -132,9 +132,9 @@
             <guid isPermalink="true">https://code-corner.dev/2024/01/08/Dispose-pattern-in-NET/</guid>
             <title>Dispose pattern in .NET</title>
             <link>https://code-corner.dev/2024/01/08/Dispose-pattern-in-NET/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2024/01/08/Dispose-pattern-in-NET/00_header.png&#34; class=&#34;post-image&#34;&gt;
 
@@ -188,9 +188,9 @@
             <guid isPermalink="true">https://code-corner.dev/2023/12/28/Syntax-sugar-we-don%E2%80%99t-even-think-about-in-C/</guid>
             <title>Syntax sugar we don’t even think about in C#</title>
             <link>https://code-corner.dev/2023/12/28/Syntax-sugar-we-don%E2%80%99t-even-think-about-in-C/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2023/12/28/Syntax-sugar-we-don%E2%80%99t-even-think-about-in-C/00_header.png&#34; class=&#34;post-image&#34;&gt;
 
@@ -269,9 +269,9 @@
             <guid isPermalink="true">https://code-corner.dev/2023/12/14/C-%E2%80%98is-null%E2%80%99-vs-%E2%80%98-null%E2%80%99/</guid>
             <title>C# ‘is null’ vs ‘== null’</title>
             <link>https://code-corner.dev/2023/12/14/C-%E2%80%98is-null%E2%80%99-vs-%E2%80%98-null%E2%80%99/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2023/12/14/C-%E2%80%98is-null%E2%80%99-vs-%E2%80%98-null%E2%80%99/00_header.png&#34; class=&#34;post-image&#34;&gt;
 
@@ -320,9 +320,9 @@
             <guid isPermalink="true">https://code-corner.dev/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/</guid>
             <title>.NET — ToList vs ToArray</title>
             <link>https://code-corner.dev/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <category>linq</category>
             <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/00_header.png&#34; class=&#34;post-image&#34;&gt;
@@ -369,9 +369,9 @@
             <guid isPermalink="true">https://code-corner.dev/2023/11/04/Understanding-Flag-Enums-in-C/</guid>
             <title>Understanding Flag Enums in C#</title>
             <link>https://code-corner.dev/2023/11/04/Understanding-Flag-Enums-in-C/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2023/11/04/Understanding-Flag-Enums-in-C/00_header.png&#34; class=&#34;post-image&#34;&gt;
 

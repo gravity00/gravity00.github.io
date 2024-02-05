@@ -7,11 +7,11 @@
         <language>en</language>
         <pubDate>Sat, 13 Aug 2022 00:00:00 +0100</pubDate>
         <lastBuildDate>Sat, 13 Aug 2022 00:00:00 +0100</lastBuildDate>
-        <category>dotnetcore</category>
-        <category>aspnetcore</category>
-        <category>csharp</category>
-        <category>patterns</category>
         <category>dotnet</category>
+        <category>dotnetcore</category>
+        <category>csharp</category>
+        <category>aspnetcore</category>
+        <category>patterns</category>
         <category>efcore</category>
         <category>dapper</category>
         <category>linq</category>
@@ -178,8 +178,8 @@
             <title>Auditing with Mediator Pipelines in ASP.NET Core</title>
             <link>https://code-corner.dev/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/</link>
             <category>dotnetcore</category>
-            <category>aspnetcore</category>
             <category>csharp</category>
+            <category>aspnetcore</category>
             <category>patterns</category>
             <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2020/11/25/Auditing-with-Mediator-Pipelines-in-ASP-NET-Core/00_header.png&#34; class=&#34;post-image&#34;&gt;
@@ -293,8 +293,8 @@
             <title>Transaction Management With Mediator Pipelines in ASP.NET Core</title>
             <link>https://code-corner.dev/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/</link>
             <category>dotnetcore</category>
-            <category>aspnetcore</category>
             <category>csharp</category>
+            <category>aspnetcore</category>
             <category>patterns</category>
             <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2020/11/07/Transaction-Management-With-Mediator-Pipelines-in-ASP-NET-Core/00_header.png&#34; class=&#34;post-image&#34;&gt;
@@ -368,8 +368,8 @@
             <title>Validation with Mediator Pipelines in ASP.NET Core Applications</title>
             <link>https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/</link>
             <category>dotnetcore</category>
-            <category>aspnetcore</category>
             <category>csharp</category>
+            <category>aspnetcore</category>
             <category>patterns</category>
             <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/00_header.png&#34; class=&#34;post-image&#34;&gt;
@@ -438,8 +438,8 @@
             <title>Using Mediator Pipelines in ASP.NET Core Applications</title>
             <link>https://code-corner.dev/2020/11/02/Using-Mediator-Pipelines-in-ASP-NET-Core-Applications/</link>
             <category>dotnetcore</category>
-            <category>aspnetcore</category>
             <category>csharp</category>
+            <category>aspnetcore</category>
             <category>patterns</category>
             <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2020/11/02/Using-Mediator-Pipelines-in-ASP-NET-Core-Applications/00_header.png&#34; class=&#34;post-image&#34;&gt;
@@ -528,8 +528,8 @@
             <title>Mediator Pattern in ASP.NET Core Applications</title>
             <link>https://code-corner.dev/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/</link>
             <category>dotnetcore</category>
-            <category>aspnetcore</category>
             <category>csharp</category>
+            <category>aspnetcore</category>
             <category>patterns</category>
             <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/00_header.png&#34; class=&#34;post-image&#34;&gt;

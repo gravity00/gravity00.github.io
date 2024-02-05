@@ -4,11 +4,11 @@
     <title>code-corner.dev • Posts by &#34;efcore&#34; tag</title>
     <link href="https://code-corner.dev" />
     <updated>2023-12-04T00:00:00.000Z</updated>
-    <category term="dotnetcore" />
-    <category term="aspnetcore" />
-    <category term="csharp" />
-    <category term="patterns" />
     <category term="dotnet" />
+    <category term="dotnetcore" />
+    <category term="csharp" />
+    <category term="aspnetcore" />
+    <category term="patterns" />
     <category term="efcore" />
     <category term="dapper" />
     <category term="linq" />
@@ -385,8 +385,8 @@
 &lt;p&gt;As an extended note, this approach can also be easily applied to any other ORM, like NHibernate, as long you can access the underline &lt;code&gt;DbConnection&lt;/code&gt; and current &lt;code&gt;DbTransaction&lt;/code&gt; from the context.&lt;/p&gt;
 </content>
         <category term="dotnetcore" />
-        <category term="aspnetcore" />
         <category term="csharp" />
+        <category term="aspnetcore" />
         <category term="efcore" />
         <category term="dapper" />
         <updated>2021-03-09T00:00:00.000Z</updated>

@@ -4,11 +4,11 @@
     <title>code-corner.dev • Posts by &#34;performance&#34; category</title>
     <link href="https://code-corner.dev" />
     <updated>2024-02-05T00:00:00.000Z</updated>
-    <category term="dotnetcore" />
-    <category term="aspnetcore" />
-    <category term="csharp" />
-    <category term="patterns" />
     <category term="dotnet" />
+    <category term="dotnetcore" />
+    <category term="csharp" />
+    <category term="aspnetcore" />
+    <category term="patterns" />
     <category term="efcore" />
     <category term="dapper" />
     <category term="linq" />
@@ -55,9 +55,9 @@
 &lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;In this article we compared the performance of initializing a &lt;code&gt;LinkedList&lt;/code&gt; versus using &lt;code&gt;ToArray&lt;/code&gt; and concluded that, on theory, &lt;code&gt;LinkedList&lt;/code&gt; looked like a good fit when creating short lived collections were enumeration must be forced because of its O(1) nature when appending values, but due to internal optimizations of &lt;code&gt;ToArray&lt;/code&gt; and since indexing is just faster while using less memory it significantly compensates having to allocate multiple arrays and copying their content.&lt;/p&gt;
 &lt;p&gt;Keep in mind that &lt;code&gt;LinkedList&lt;/code&gt; still has its place, specially when storing collections too big to be stored into a single memory section and it’s nice to see that .NET keeps improving its performance.&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <category term="linq" />
         <updated>2024-02-05T00:00:00.000Z</updated>
     </entry>
@@ -104,9 +104,9 @@
 &lt;h2 id=&#34;Conclusion&#34;&gt;&lt;a href=&#34;#Conclusion&#34; class=&#34;headerlink&#34; title=&#34;Conclusion&#34;&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;&lt;p&gt;In this article we compared the performance of &lt;code&gt;ToArray&lt;/code&gt; versus &lt;code&gt;ToList&lt;/code&gt; and concluded the former performs better most of the time by being faster and more memory efficient, so consider using it when creating short lived collections were enumeration must be forced.&lt;/p&gt;
 &lt;p&gt;We also concluded that .NET 8, the version still to be released, will bring fantastic performance upgrades in this regards. Not only it is significantly faster than the older versions, it also brings &lt;code&gt;ToArray&lt;/code&gt; and &lt;code&gt;ToList&lt;/code&gt; so close that it’s almost indifferent which method should be used.&lt;/p&gt;
 </content>
+        <category term="dotnet" />
         <category term="dotnetcore" />
         <category term="csharp" />
-        <category term="dotnet" />
         <category term="linq" />
         <updated>2023-11-09T00:00:00.000Z</updated>
     </entry>

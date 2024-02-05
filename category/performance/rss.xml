@@ -7,11 +7,11 @@
         <language>en</language>
         <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
         <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
-        <category>dotnetcore</category>
-        <category>aspnetcore</category>
-        <category>csharp</category>
-        <category>patterns</category>
         <category>dotnet</category>
+        <category>dotnetcore</category>
+        <category>csharp</category>
+        <category>aspnetcore</category>
+        <category>patterns</category>
         <category>efcore</category>
         <category>dapper</category>
         <category>linq</category>
@@ -19,9 +19,9 @@
             <guid isPermalink="true">https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/</guid>
             <title>.NET — LinkedList vs ToArray</title>
             <link>https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <category>linq</category>
             <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/00_header.png&#34; class=&#34;post-image&#34;&gt;
@@ -68,9 +68,9 @@
             <guid isPermalink="true">https://code-corner.dev/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/</guid>
             <title>.NET — ToList vs ToArray</title>
             <link>https://code-corner.dev/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/</link>
+            <category>dotnet</category>
             <category>dotnetcore</category>
             <category>csharp</category>
-            <category>dotnet</category>
             <category>linq</category>
             <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
             <description><![CDATA[ &lt;img src=&#34;/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/00_header.png&#34; class=&#34;post-image&#34;&gt;
