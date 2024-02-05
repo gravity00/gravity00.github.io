@@ -11,9 +11,9 @@
         <category>aspnetcore</category>
         <category>csharp</category>
         <category>patterns</category>
+        <category>dotnet</category>
         <category>efcore</category>
         <category>dapper</category>
-        <category>dotnet</category>
         <category>linq</category>
         <item>
             <guid isPermalink="true">https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/</guid>

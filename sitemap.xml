@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://code-corner.dev/2023/12/21/Configuration-providers-in-NET/</loc>
+    
+    <lastmod>2024-02-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2023/12/14/C-%E2%80%98is-null%E2%80%99-vs-%E2%80%98-null%E2%80%99/</loc>
+    
+    <lastmod>2024-02-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/</loc>
     
     <lastmod>2024-02-05</lastmod>
@@ -138,6 +156,13 @@
   </url>
   
   <url>
+    <loc>https://code-corner.dev/tags/dotnet/</loc>
+    <lastmod>2024-02-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://code-corner.dev/tags/efcore/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -146,13 +171,6 @@
   
   <url>
     <loc>https://code-corner.dev/tags/dapper/</loc>
-    <lastmod>2024-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://code-corner.dev/tags/dotnet/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -175,6 +193,13 @@
   </url>
   
   <url>
+    <loc>https://code-corner.dev/categories/concepts/</loc>
+    <lastmod>2024-02-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://code-corner.dev/categories/performance/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -183,13 +208,6 @@
   
   <url>
     <loc>https://code-corner.dev/categories/devops/</loc>
-    <lastmod>2024-02-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://code-corner.dev/categories/concepts/</loc>
     <lastmod>2024-02-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

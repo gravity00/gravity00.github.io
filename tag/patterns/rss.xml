@@ -11,9 +11,9 @@
         <category>aspnetcore</category>
         <category>csharp</category>
         <category>patterns</category>
+        <category>dotnet</category>
         <category>efcore</category>
         <category>dapper</category>
-        <category>dotnet</category>
         <category>linq</category>
         <item>
             <guid isPermalink="true">https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/</guid>
