@@ -1,3 +1,7 @@
+https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/
+https://code-corner.dev/2024/01/19/NET-%E2%80%94-TaskCompletionSource-and-CancellationTokenSource/
+https://code-corner.dev/2024/01/08/Dispose-pattern-in-NET/
+https://code-corner.dev/2023/12/28/Syntax-sugar-we-don%E2%80%99t-even-think-about-in-C/
 https://code-corner.dev/2023/12/21/Configuration-providers-in-NET/
 https://code-corner.dev/2023/12/14/C-%E2%80%98is-null%E2%80%99-vs-%E2%80%98-null%E2%80%99/
 https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/

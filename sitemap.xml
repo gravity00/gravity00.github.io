@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/</loc>
+    
+    <lastmod>2024-02-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2024/01/19/NET-%E2%80%94-TaskCompletionSource-and-CancellationTokenSource/</loc>
+    
+    <lastmod>2024-02-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2024/01/08/Dispose-pattern-in-NET/</loc>
+    
+    <lastmod>2024-02-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2023/12/28/Syntax-sugar-we-don%E2%80%99t-even-think-about-in-C/</loc>
+    
+    <lastmod>2024-02-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://code-corner.dev/2023/12/21/Configuration-providers-in-NET/</loc>
     
     <lastmod>2024-02-05</lastmod>
