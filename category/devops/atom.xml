@@ -7,8 +7,8 @@
     <category term="dotnetcore" />
     <category term="aspnetcore" />
     <category term="csharp" />
-    <category term="dotnet" />
     <category term="patterns" />
+    <category term="dotnet" />
     <category term="efcore" />
     <category term="dapper" />
     <category term="linq" />
@@ -16,10 +16,7 @@
         <id>https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/</id>
         <title>.NET — DevOps and Entity Framework Core</title>
         <link rel="alternate" href="https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/"/>
-        <content type="html">&lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://levelup.gitconnected.com/net-devops-and-entity-framework-core-f8ced538a1f9&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Most .NET developers either have used Entity Framework Core or eventually will, because it is one of the most known and flexible ORM frameworks to access databases in the .NET ecosystem, directly supported by Microsoft and the Open Source community.&lt;/p&gt;
+        <content type="html">&lt;p&gt;Most .NET developers either have used Entity Framework Core or eventually will, because it is one of the most known and flexible ORM frameworks to access databases in the .NET ecosystem, directly supported by Microsoft and the Open Source community.&lt;/p&gt;
 &lt;p&gt;In this article I’m going to explain how you can create a console application that will check if migrations are missing from the database and apply them accordingly. This is an approach I’ve been using ever since Microsoft released .NET Core 1 RC 1 (&lt;a href=&#34;https://medium.com/@joaoprsimoes/net-creating-advanced-console-applications-c99d58216d36&#34;&gt;at the time I even created an open-source library to facilitate console hosting&lt;/a&gt;, now deprecated because we can use &lt;code&gt;Microsoft.Extensions.Hosting&lt;/code&gt;).&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Ever since its inception, one of the main features supported by Entity Framework is the concept of &lt;strong&gt;database migrations&lt;/strong&gt; in code-first scenarios which, in a simplified way, work as follows:&lt;/p&gt;

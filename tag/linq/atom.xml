@@ -7,8 +7,8 @@
     <category term="dotnetcore" />
     <category term="aspnetcore" />
     <category term="csharp" />
-    <category term="dotnet" />
     <category term="patterns" />
+    <category term="dotnet" />
     <category term="efcore" />
     <category term="dapper" />
     <category term="linq" />
@@ -16,10 +16,7 @@
         <id>https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/</id>
         <title>.NET — LinkedList vs ToArray</title>
         <link rel="alternate" href="https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/"/>
-        <content type="html">&lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://levelup.gitconnected.com/net-linkedlist-vs-toarray-56bcdd9ce717&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Some weeks ago I created an &lt;a href=&#34;/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/&#34; title=&#34;.NET — ToList vs ToArray&#34;&gt;article comparing the performance of ToList versus ToArray&lt;/a&gt; when creating short lived collections that won’t be mutated, usually used to prevent multiple enumerations when iterating over a temporary LINQ transformation or to ensure mapping exceptions will be thrown inside the corresponding application layer.&lt;/p&gt;
+        <content type="html">&lt;p&gt;Some weeks ago I created an &lt;a href=&#34;/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/&#34; title=&#34;.NET — ToList vs ToArray&#34;&gt;article comparing the performance of ToList versus ToArray&lt;/a&gt; when creating short lived collections that won’t be mutated, usually used to prevent multiple enumerations when iterating over a temporary LINQ transformation or to ensure mapping exceptions will be thrown inside the corresponding application layer.&lt;/p&gt;
 &lt;p&gt;In that article I concluded &lt;code&gt;ToArray&lt;/code&gt; is faster and more memory efficient than &lt;code&gt;ToList&lt;/code&gt; for almost any collection sizes and in any .NET version — tests were conducted on .NET Framework 4.8, .NET 7 and .NET 8.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;But then I began to wonder:&lt;/strong&gt; &lt;em&gt;If I’m creating a temporary collection of unknown size just to force enumeration, wouldn’t &lt;code&gt;LinkedList&lt;/code&gt; be a more efficient collection since I’m only appending items to the end, which is O(1), instead of constantly allocating new arrays like &lt;code&gt;ToArray&lt;/code&gt; does?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I believe that’s a valid point so I decided to do a performance comparison between the two, assuming &lt;code&gt;ToArray&lt;/code&gt; as the baseline and try to give a detailed explanation for the observed results.&lt;/p&gt;
@@ -63,10 +60,7 @@
         <id>https://code-corner.dev/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/</id>
         <title>.NET — ToList vs ToArray</title>
         <link rel="alternate" href="https://code-corner.dev/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/"/>
-        <content type="html">&lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://levelup.gitconnected.com/net-tolist-vs-toarray-761c04ae85e8&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Ever since Microsoft introduced Language Integrated Query to the .NET framework (also known as LINQ) developers have been using it extensively to work with collections.&lt;/p&gt;
+        <content type="html">&lt;p&gt;Ever since Microsoft introduced Language Integrated Query to the .NET framework (also known as LINQ) developers have been using it extensively to work with collections.&lt;/p&gt;
 &lt;p&gt;From a simple filter, to an aggregation, to a transformation, LINQ is the technology of choice to keep code clean and readable. We even have providers that convert LINQ instructions into SQL commands that will be run in some database.&lt;/p&gt;
 &lt;p&gt;In this article I’m going to compare the performance of &lt;code&gt;ToList&lt;/code&gt; versus &lt;code&gt;ToArray&lt;/code&gt; when creating short lived collections. I’m also going to execute the test in different versions of the framework (.NET Framework 4.8, .NET 7 and .NET 8) so we can also see how much the performance have improved over the years.&lt;/p&gt;
 &lt;hr&gt;

@@ -7,8 +7,8 @@
     <category term="dotnetcore" />
     <category term="aspnetcore" />
     <category term="csharp" />
-    <category term="dotnet" />
     <category term="patterns" />
+    <category term="dotnet" />
     <category term="efcore" />
     <category term="dapper" />
     <category term="linq" />
@@ -16,10 +16,7 @@
         <id>https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/</id>
         <title>.NET — DevOps and Entity Framework Core</title>
         <link rel="alternate" href="https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/"/>
-        <content type="html">&lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://levelup.gitconnected.com/net-devops-and-entity-framework-core-f8ced538a1f9&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Most .NET developers either have used Entity Framework Core or eventually will, because it is one of the most known and flexible ORM frameworks to access databases in the .NET ecosystem, directly supported by Microsoft and the Open Source community.&lt;/p&gt;
+        <content type="html">&lt;p&gt;Most .NET developers either have used Entity Framework Core or eventually will, because it is one of the most known and flexible ORM frameworks to access databases in the .NET ecosystem, directly supported by Microsoft and the Open Source community.&lt;/p&gt;
 &lt;p&gt;In this article I’m going to explain how you can create a console application that will check if migrations are missing from the database and apply them accordingly. This is an approach I’ve been using ever since Microsoft released .NET Core 1 RC 1 (&lt;a href=&#34;https://medium.com/@joaoprsimoes/net-creating-advanced-console-applications-c99d58216d36&#34;&gt;at the time I even created an open-source library to facilitate console hosting&lt;/a&gt;, now deprecated because we can use &lt;code&gt;Microsoft.Extensions.Hosting&lt;/code&gt;).&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Ever since its inception, one of the main features supported by Entity Framework is the concept of &lt;strong&gt;database migrations&lt;/strong&gt; in code-first scenarios which, in a simplified way, work as follows:&lt;/p&gt;
@@ -123,10 +120,7 @@
         <id>https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/</id>
         <title>Immutability and Entity Framework Core</title>
         <link rel="alternate" href="https://code-corner.dev/2022/08/13/Immutability-and-Entity-Framework-Core/"/>
-        <content type="html">&lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/geekculture/immutability-and-entity-framework-core-60ac59919c2&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Nowadays, when implementing a .NET application that works directly with a database (relational or not), most developers will chose Entity Framework Core to abstract their data layer and work directly with entity classes.&lt;/p&gt;
+        <content type="html">&lt;p&gt;Nowadays, when implementing a .NET application that works directly with a database (relational or not), most developers will chose Entity Framework Core to abstract their data layer and work directly with entity classes.&lt;/p&gt;
 &lt;p&gt;It has become an integral part of the .NET ecosystem, just like ASP.NET, and it is extremely rare finding someone that never worked with it. I’ve been using it myself ever since version 4 (along with other ORMs) and I must say that it &lt;em&gt;&lt;strong&gt;aged like a fine wine&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Fully open sourced, with support for multiple databases (not just SQL Server) while offering relatively optimized and extensible conversion from LINQ to database queries, accessing data from a .NET application never been easier. And when it doesn’t support something, &lt;a href=&#34;/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/&#34; title=&#34;Integrating Dapper with Entity Framework Core&#34;&gt;just integrate with some micro ORM and go crazy on that SQL&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;One core feature is the implementation of the unit of work pattern by supporting, what is usually called, a first level cache. Load a bunch of entities from the database, that will be tracked in memory by the context, mutate or delete them, create new ones and then flush everything in a single database access.&lt;/p&gt;
@@ -279,10 +273,7 @@
         <id>https://code-corner.dev/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/</id>
         <title>Integrating Dapper with Entity Framework Core</title>
         <link rel="alternate" href="https://code-corner.dev/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/"/>
-        <content type="html">&lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/geekculture/integrating-dapper-with-entity-framework-core-55aacc94b5b0&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Nowadays it is extremely rare to implement an application without using any sort of library for &lt;em&gt;Object-Relational Mapping (ORM)&lt;/em&gt; to reduce development time by removing the need to implement a lot of boilerplate code to access a database. In the .NET world that usually means using &lt;a href=&#34;https://docs.microsoft.com/en-us/ef/core/&#34;&gt;Entity Framework Core&lt;/a&gt; or &lt;a href=&#34;https://nhibernate.info/&#34;&gt;NHibernate&lt;/a&gt; both offering strong tooling for CRUD operations, data type conversions, strong typed queries using LINQ with &lt;code&gt;IQueryable&lt;/code&gt; and so on.&lt;/p&gt;
+        <content type="html">&lt;p&gt;Nowadays it is extremely rare to implement an application without using any sort of library for &lt;em&gt;Object-Relational Mapping (ORM)&lt;/em&gt; to reduce development time by removing the need to implement a lot of boilerplate code to access a database. In the .NET world that usually means using &lt;a href=&#34;https://docs.microsoft.com/en-us/ef/core/&#34;&gt;Entity Framework Core&lt;/a&gt; or &lt;a href=&#34;https://nhibernate.info/&#34;&gt;NHibernate&lt;/a&gt; both offering strong tooling for CRUD operations, data type conversions, strong typed queries using LINQ with &lt;code&gt;IQueryable&lt;/code&gt; and so on.&lt;/p&gt;
 &lt;p&gt;Despite the pros of using an ORM there are also some cons that, while may not prevent them to be widely used inside an application, they may need to be replaced in some areas either for performance reasons or limitations. This usually means working directly with &lt;a href=&#34;https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview&#34;&gt;ADO.NET&lt;/a&gt; (oh hell no!) or use Micro ORM libraries, like &lt;a href=&#34;https://github.com/StackExchange/Dapper&#34;&gt;Dapper&lt;/a&gt;, that are focused on performance and providing a simpler way to map database queries into objects.&lt;/p&gt;
 &lt;p&gt;In this article I’m going to demonstrate how Dapper can easily be integrated with Entity Framework Core (and probably with any other ORM) without using &lt;code&gt;TransactionScope&lt;/code&gt;, while trying to keep the same contracts via extension methods to &lt;code&gt;DbContext&lt;/code&gt; instances and ensuring the SQL is properly logged in a similar way to what EF Core usually does.&lt;/p&gt;
 &lt;h1 id=&#34;Dapper-Requirements&#34;&gt;&lt;a href=&#34;#Dapper-Requirements&#34; class=&#34;headerlink&#34; title=&#34;Dapper Requirements&#34;&gt;&lt;/a&gt;Dapper Requirements&lt;/h1&gt;&lt;p&gt;To work with Dapper, the only requirements are a &lt;code&gt;DbConnection&lt;/code&gt;, the SQL text, and some optional parameters, like a &lt;code&gt;DbTransaction&lt;/code&gt;, command timeout, query parameters and so on. Sometimes is is also necessary to globally register some custom &lt;code&gt;TypeHandler&amp;lt;T&amp;gt;&lt;/code&gt; for the when it can’t convert a given database type to its CLR representation.&lt;/p&gt;

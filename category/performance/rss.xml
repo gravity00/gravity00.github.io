@@ -10,8 +10,8 @@
         <category>dotnetcore</category>
         <category>aspnetcore</category>
         <category>csharp</category>
-        <category>dotnet</category>
         <category>patterns</category>
+        <category>dotnet</category>
         <category>efcore</category>
         <category>dapper</category>
         <category>linq</category>
@@ -24,10 +24,7 @@
             <category>dotnet</category>
             <category>linq</category>
             <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://levelup.gitconnected.com/net-linkedlist-vs-toarray-56bcdd9ce717&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Some weeks ago I created an &lt;a href=&#34;/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/&#34; title=&#34;.NET — ToList vs ToArray&#34;&gt;article comparing the performance of ToList versus ToArray&lt;/a&gt; when creating short lived collections that won’t be mutated, usually used to prevent multiple enumerations when iterating over a temporary LINQ transformation or to ensure mapping exceptions will be thrown inside the corresponding application layer.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Some weeks ago I created an &lt;a href=&#34;/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/&#34; title=&#34;.NET — ToList vs ToArray&#34;&gt;article comparing the performance of ToList versus ToArray&lt;/a&gt; when creating short lived collections that won’t be mutated, usually used to prevent multiple enumerations when iterating over a temporary LINQ transformation or to ensure mapping exceptions will be thrown inside the corresponding application layer.&lt;/p&gt;
 &lt;p&gt;In that article I concluded &lt;code&gt;ToArray&lt;/code&gt; is faster and more memory efficient than &lt;code&gt;ToList&lt;/code&gt; for almost any collection sizes and in any .NET version — tests were conducted on .NET Framework 4.8, .NET 7 and .NET 8.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;But then I began to wonder:&lt;/strong&gt; &lt;em&gt;If I’m creating a temporary collection of unknown size just to force enumeration, wouldn’t &lt;code&gt;LinkedList&lt;/code&gt; be a more efficient collection since I’m only appending items to the end, which is O(1), instead of constantly allocating new arrays like &lt;code&gt;ToArray&lt;/code&gt; does?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;I believe that’s a valid point so I decided to do a performance comparison between the two, assuming &lt;code&gt;ToArray&lt;/code&gt; as the baseline and try to give a detailed explanation for the observed results.&lt;/p&gt;
@@ -71,10 +68,7 @@
             <category>dotnet</category>
             <category>linq</category>
             <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://levelup.gitconnected.com/net-tolist-vs-toarray-761c04ae85e8&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Ever since Microsoft introduced Language Integrated Query to the .NET framework (also known as LINQ) developers have been using it extensively to work with collections.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Ever since Microsoft introduced Language Integrated Query to the .NET framework (also known as LINQ) developers have been using it extensively to work with collections.&lt;/p&gt;
 &lt;p&gt;From a simple filter, to an aggregation, to a transformation, LINQ is the technology of choice to keep code clean and readable. We even have providers that convert LINQ instructions into SQL commands that will be run in some database.&lt;/p&gt;
 &lt;p&gt;In this article I’m going to compare the performance of &lt;code&gt;ToList&lt;/code&gt; versus &lt;code&gt;ToArray&lt;/code&gt; when creating short lived collections. I’m also going to execute the test in different versions of the framework (.NET Framework 4.8, .NET 7 and .NET 8) so we can also see how much the performance have improved over the years.&lt;/p&gt;
 &lt;hr&gt;
@@ -116,10 +110,7 @@
             <category>dotnetcore</category>
             <category>csharp</category>
             <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://levelup.gitconnected.com/net-8-frozendictionary-performance-92ce75d24933&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Microsoft’s upcoming release of .NET 8 will introduce a lot of &lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8&#34;&gt;new features&lt;/a&gt; that will certainly be welcomed by the developer community, making it an even stronger framework for application development.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Microsoft’s upcoming release of .NET 8 will introduce a lot of &lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8&#34;&gt;new features&lt;/a&gt; that will certainly be welcomed by the developer community, making it an even stronger framework for application development.&lt;/p&gt;
 &lt;p&gt;One of those features is the namespace &lt;code&gt;System.Collections.Frozen&lt;/code&gt; that introduces two new collections: &lt;code&gt;FrozenDictionary&lt;/code&gt; and &lt;code&gt;FrozenSet&lt;/code&gt;. These new types, &lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8#performance-focused-types&#34;&gt;as stated by Microsoft&lt;/a&gt;, are focused in reducing the time of read operations at the expense of increasing initialization time of immutable collections. This makes them perfect for shared data that only needs to be populated a single time, like application configurations or cached data in-memory.&lt;/p&gt;
 &lt;p&gt;In this article I’m going to benchmark the performance gains that can be achieved by using a &lt;code&gt;FrozenDictionary&lt;/code&gt; instead of a &lt;code&gt;Dictionary&lt;/code&gt; or an &lt;code&gt;ImmutableDictionary&lt;/code&gt; to store shared data.&lt;/p&gt;
 &lt;p&gt;I’m going to use the well known C# library &lt;code&gt;BenchmarkDotNet&lt;/code&gt; to run the tests and the environment will be the following:&lt;/p&gt;

@@ -10,8 +10,8 @@
         <category>dotnetcore</category>
         <category>aspnetcore</category>
         <category>csharp</category>
-        <category>dotnet</category>
         <category>patterns</category>
+        <category>dotnet</category>
         <category>efcore</category>
         <category>dapper</category>
         <category>linq</category>
@@ -24,10 +24,7 @@
             <category>patterns</category>
             <category>efcore</category>
             <pubDate>Sat, 13 Aug 2022 00:00:00 +0100</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/geekculture/immutability-and-entity-framework-core-60ac59919c2&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Nowadays, when implementing a .NET application that works directly with a database (relational or not), most developers will chose Entity Framework Core to abstract their data layer and work directly with entity classes.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Nowadays, when implementing a .NET application that works directly with a database (relational or not), most developers will chose Entity Framework Core to abstract their data layer and work directly with entity classes.&lt;/p&gt;
 &lt;p&gt;It has become an integral part of the .NET ecosystem, just like ASP.NET, and it is extremely rare finding someone that never worked with it. I’ve been using it myself ever since version 4 (along with other ORMs) and I must say that it &lt;em&gt;&lt;strong&gt;aged like a fine wine&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Fully open sourced, with support for multiple databases (not just SQL Server) while offering relatively optimized and extensible conversion from LINQ to database queries, accessing data from a .NET application never been easier. And when it doesn’t support something, &lt;a href=&#34;/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/&#34; title=&#34;Integrating Dapper with Entity Framework Core&#34;&gt;just integrate with some micro ORM and go crazy on that SQL&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;One core feature is the implementation of the unit of work pattern by supporting, what is usually called, a first level cache. Load a bunch of entities from the database, that will be tracked in memory by the context, mutate or delete them, create new ones and then flush everything in a single database access.&lt;/p&gt;
@@ -180,10 +177,7 @@
             <category>csharp</category>
             <category>patterns</category>
             <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/geekculture/auditing-with-mediator-pipelines-in-asp-net-core-be34cf3551b&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;When implementing a web application, it can be a good idea to enforce some kind of auditing to all of your client interactions, either to track their behavior over time, to ensure any security breach will be properly logged, or just to help analyze system bugs.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;When implementing a web application, it can be a good idea to enforce some kind of auditing to all of your client interactions, either to track their behavior over time, to ensure any security breach will be properly logged, or just to help analyze system bugs.&lt;/p&gt;
 &lt;p&gt;Previously we talked about using the mediator pattern to implement the &lt;strong&gt;Command Query Responsibility Segregation (CQRS)&lt;/strong&gt; and &lt;strong&gt;Event Sourcing (ES)&lt;/strong&gt; and how pipelines could be used to implement transversal behavior to your application.&lt;/p&gt;
 &lt;p&gt;Since commands are responsible to mutate the system state, in this article I’m going to demonstrate how you could implement an audit pipeline to ensure all commands will be stored into a table. Because a variable number of events can be broadcasted when the state changes, the pipeline will also store them into another table and with a reference to the command, ensuring any correlation can be analyzed.&lt;/p&gt;
 &lt;hr&gt;
@@ -293,10 +287,7 @@
             <category>csharp</category>
             <category>patterns</category>
             <pubDate>Sat, 07 Nov 2020 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/swlh/transaction-management-with-mediator-pipelines-in-asp-net-core-39317a19bb8d&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;When implementing a &lt;strong&gt;simplified CQRS&lt;/strong&gt; service, which usually has a single database but still separates commands from queries, the mediator pipeline can be used to manage transactions when processing commands, ensuring changes will be implicitly committed unless an exception is thrown.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;When implementing a &lt;strong&gt;simplified CQRS&lt;/strong&gt; service, which usually has a single database but still separates commands from queries, the mediator pipeline can be used to manage transactions when processing commands, ensuring changes will be implicitly committed unless an exception is thrown.&lt;/p&gt;
 &lt;p&gt;Implementing a pipeline for transactions has some key advantages even when using Entity Framework Core or other ORM that tracks and flushes changes at a single point in time.&lt;/p&gt;
 &lt;p&gt;Because the command handler is executing inside an implicit transaction, the developer is free to flush their changes as it sees fit knowing that any exception will rollback the changes. This is very helpful when it wants to cancel the flow when some business rules aren’t meet and could only be checked after changing the system state. Optimistic concurrency is a good example where you may want to flush your changes before leaving the handler so you know exactly what entity failed and can send a more detailed message to the user, which is the usual approach when implementing a dedicated &lt;strong&gt;Backend for Frontend&lt;/strong&gt; service.&lt;/p&gt;
 &lt;p&gt;Also, ORMs are very good at abstracting database access but can’t solve more edge cases, specially when performance is a requirement. Being able to use a more lightweight library (e.g. &lt;a href=&#34;https://github.com/StackExchange/Dapper&#34;&gt;Dapper&lt;/a&gt;) to do some bulk operations and using the ORM context connection inside the same transaction will remove the need to use the &lt;code&gt;TransactionScope&lt;/code&gt; and reduce some application complexity.&lt;/p&gt;
@@ -366,10 +357,7 @@
             <category>csharp</category>
             <category>patterns</category>
             <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/swlh/validation-with-mediator-pipelines-in-asp-net-core-applications-7878a56ec604&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;When implementing web applications that manipulate information, there is always the need to validate data sent by the clients, ensuring business rules are properly implemented.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;When implementing web applications that manipulate information, there is always the need to validate data sent by the clients, ensuring business rules are properly implemented.&lt;/p&gt;
 &lt;p&gt;Previously I talked about the implementation of &lt;strong&gt;Command Query Responsibility Segregation (CQRS)&lt;/strong&gt; and &lt;strong&gt;Event Sourcing (ES)&lt;/strong&gt; using a mediator pattern and how to support transversal behavior via pipelines.&lt;/p&gt;
 &lt;p&gt;In this article I’m going to demonstrate how validation can be enforced into your commands and events before reaching the handlers, making sure that invalid data will be rejected by the API.&lt;/p&gt;
 &lt;p&gt;This approach not only reduces the amount of duplicated code, it also ensures validations won’t be forgotten, unless explicitly stated.&lt;/p&gt;
@@ -434,10 +422,7 @@
             <category>csharp</category>
             <category>patterns</category>
             <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/swlh/mediator-pattern-in-asp-net-core-applications-pipelines-ec0926e71bc8&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In my &lt;a href=&#34;/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/&#34; title=&#34;Mediator Pattern in ASP.NET Core Applications&#34;&gt;previous article&lt;/a&gt; I explained how you could implement &lt;strong&gt;Command Query Responsibility Segregation (CQRS)&lt;/strong&gt; and &lt;strong&gt;Event Sourcing (ES)&lt;/strong&gt; patterns using a mediator instance from &lt;a href=&#34;https://www.nuget.org/packages/simplesoft.mediator&#34;&gt;SimpleSoft.Mediator&lt;/a&gt; in ASP.NET Core applications.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;In my &lt;a href=&#34;/2020/10/28/Mediator-Pattern-in-ASP-NET-Core-Applications/&#34; title=&#34;Mediator Pattern in ASP.NET Core Applications&#34;&gt;previous article&lt;/a&gt; I explained how you could implement &lt;strong&gt;Command Query Responsibility Segregation (CQRS)&lt;/strong&gt; and &lt;strong&gt;Event Sourcing (ES)&lt;/strong&gt; patterns using a mediator instance from &lt;a href=&#34;https://www.nuget.org/packages/simplesoft.mediator&#34;&gt;SimpleSoft.Mediator&lt;/a&gt; in ASP.NET Core applications.&lt;/p&gt;
 &lt;p&gt;This time I’m going to explain how to intercept commands, queries and events, making it possible to apply transversal behavior before they reach the handlers, reducing significantly the amount of boilerplate and duplicated code.&lt;/p&gt;
 &lt;p&gt;Transaction management, logging, auditing, caching or validations are some of the good examples where pipelines can be very helpful. Imagine the following chains:&lt;/p&gt;
 &lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Commands:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Mediator&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LoggingPipeline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      ValidationPipeline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        TransactionPipeline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          AuditPipeline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            Handler&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Queries:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Mediator&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LoggingPipeline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      Handler&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Events:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Mediator&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    LoggingPipeline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      StoragePipeline&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Handler(s)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -522,10 +507,7 @@
             <category>csharp</category>
             <category>patterns</category>
             <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
-            <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;This article was first published on &lt;a href=&#34;https://medium.com/swlh/mediator-pattern-in-asp-net-core-applications-109b4231c0f8&#34;&gt;Medium&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;For the last few years, &lt;strong&gt;Command Query Responsibility Segregation (CQRS)&lt;/strong&gt; and &lt;strong&gt;Event Sourcing (ES)&lt;/strong&gt; emerged as patterns that can help implement large scale systems, with some risky complexity, by having different models to read or mutate data while also using events as a single source of truth.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;For the last few years, &lt;strong&gt;Command Query Responsibility Segregation (CQRS)&lt;/strong&gt; and &lt;strong&gt;Event Sourcing (ES)&lt;/strong&gt; emerged as patterns that can help implement large scale systems, with some risky complexity, by having different models to read or mutate data while also using events as a single source of truth.&lt;/p&gt;
 &lt;p&gt;Since there are already great articles explaining &lt;a href=&#34;https://martinfowler.com/bliki/CQRS.html&#34;&gt;&lt;strong&gt;CQRS&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://martinfowler.com/eaaDev/EventSourcing.html&#34;&gt;&lt;strong&gt;ES&lt;/strong&gt;&lt;/a&gt; in great depth, I’m going to focus and show how you can decouple your application layers by only knowing POCOs and a mediator instance from &lt;a href=&#34;https://www.nuget.org/packages/simplesoft.mediator&#34;&gt;SimpleSoft.Mediator&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Remember that, even if you are not using &lt;strong&gt;CQRS&lt;/strong&gt; or &lt;strong&gt;ES&lt;/strong&gt; to its full extend, just by ensuring a logical model segregation inside the project can make your life easier in the long run, even when implementing a simple &lt;strong&gt;Backend for Frontend (BFF)&lt;/strong&gt; or a &lt;strong&gt;minimum viable product (MVP)&lt;/strong&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;Commands-Queries-Events-Handlers-and-Mediator&#34;&gt;&lt;a href=&#34;#Commands-Queries-Events-Handlers-and-Mediator&#34; class=&#34;headerlink&#34; title=&#34;Commands, Queries, Events, Handlers and Mediator&#34;&gt;&lt;/a&gt;Commands, Queries, Events, Handlers and Mediator&lt;/h1&gt;&lt;p&gt;Before showing some code, lets make a simple review of some core concepts about these patterns and the library we are going to use:&lt;/p&gt;
