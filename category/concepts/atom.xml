@@ -11,6 +11,7 @@
     <category term="dotnet" />
     <category term="efcore" />
     <category term="dapper" />
+    <category term="hangfire" />
     <category term="linq" />
     <entry>
         <id>https://code-corner.dev/2024/01/19/NET-%E2%80%94-TaskCompletionSource-and-CancellationTokenSource/</id>

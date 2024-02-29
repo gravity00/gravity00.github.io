@@ -11,6 +11,7 @@
     <category term="dotnet" />
     <category term="efcore" />
     <category term="dapper" />
+    <category term="hangfire" />
     <category term="linq" />
     <entry>
         <id>https://code-corner.dev/2021/03/09/Integrating-Dapper-with-Entity-Framework-Core/</id>

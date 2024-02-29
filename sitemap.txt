@@ -1,3 +1,4 @@
+https://code-corner.dev/2024/02/29/NET-Hangfire/
 https://code-corner.dev/2020/11/04/Validation-with-Mediator-Pipelines-in-ASP-NET-Core-Applications/
 https://code-corner.dev/2020/11/02/Using-Mediator-Pipelines-in-ASP-NET-Core-Applications/
 https://code-corner.dev/2023/11/04/Understanding-Flag-Enums-in-C/
@@ -23,6 +24,7 @@ https://code-corner.dev/tags/patterns/
 https://code-corner.dev/tags/dotnet/
 https://code-corner.dev/tags/efcore/
 https://code-corner.dev/tags/dapper/
+https://code-corner.dev/tags/hangfire/
 https://code-corner.dev/tags/linq/
 https://code-corner.dev/categories/tutorial/
 https://code-corner.dev/categories/concepts/

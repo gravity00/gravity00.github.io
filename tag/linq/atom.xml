@@ -11,6 +11,7 @@
     <category term="dotnet" />
     <category term="efcore" />
     <category term="dapper" />
+    <category term="hangfire" />
     <category term="linq" />
     <entry>
         <id>https://code-corner.dev/2024/02/05/NET-%E2%80%94-LinkedList-vs-ToArray/</id>
