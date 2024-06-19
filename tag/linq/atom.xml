@@ -15,7 +15,7 @@
     <category term="linq" />
     <entry>
         <id>https://code-corner.dev/2024/06/19/NET-9-ToList-vs-ToArray/</id>
-        <title>.NET 9 - ToList vs ToArray</title>
+        <title>.NET 9 — ToList vs ToArray</title>
         <link rel="alternate" href="https://code-corner.dev/2024/06/19/NET-9-ToList-vs-ToArray/"/>
         <content type="html">&lt;p&gt;Last year I made an &lt;a href=&#34;/2023/11/09/NET-%E2%80%94-ToList-vs-ToArray/&#34; title=&#34;.NET — ToList vs ToArray&#34;&gt;article comparing the performance of ToList versus ToArray&lt;/a&gt; when creating short lived collections that won’t be mutated, usually used to prevent multiple enumerations when iterating over a temporary LINQ transformation or to ensure mapping exceptions will be thrown inside the corresponding application layer.&lt;/p&gt;
 &lt;p&gt;The tests were performed with .NET Framework 4.8, .NET 7 and .NET 8, which concluded that &lt;code&gt;ToArray&lt;/code&gt; is significantly faster and more memory efficient for almost all collection sizes, with the only exception with very large collections in .NET 8 were &lt;code&gt;ToList&lt;/code&gt; was faster - but still uses more memory).&lt;/p&gt;

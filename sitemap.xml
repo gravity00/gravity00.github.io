@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://code-corner.dev/2024/06/19/NET-9-ToList-vs-ToArray/</loc>
+    <loc>https://code-corner.dev/2024/02/29/NET-Hangfire/</loc>
     
     <lastmod>2024-06-19</lastmod>
     
@@ -13,7 +13,16 @@
   <url>
     <loc>https://code-corner.dev/2024/05/25/NET-IAsyncEnumerable-utility-extensions/</loc>
     
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://code-corner.dev/2024/06/19/NET-9-ToList-vs-ToArray/</loc>
+    
+    <lastmod>2024-06-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -102,15 +111,6 @@
   
   <url>
     <loc>https://code-corner.dev/2023/12/04/NET-%E2%80%94-DevOps-and-Entity-Framework-Core/</loc>
-    
-    <lastmod>2024-04-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://code-corner.dev/2024/02/29/NET-Hangfire/</loc>
     
     <lastmod>2024-04-16</lastmod>
     

@@ -15,7 +15,7 @@
     <category term="linq" />
     <entry>
         <id>https://code-corner.dev/2024/05/25/NET-IAsyncEnumerable-utility-extensions/</id>
-        <title>.NET - IAsyncEnumerable utility extensions</title>
+        <title>.NET — IAsyncEnumerable utility extensions</title>
         <link rel="alternate" href="https://code-corner.dev/2024/05/25/NET-IAsyncEnumerable-utility-extensions/"/>
         <content type="html">&lt;p&gt;With the introduction of async streams in .NET Core 3, represented by the interface &lt;code&gt;IAsyncEnumerable&amp;lt;T&amp;gt;&lt;/code&gt;, and with a direct support in C# 8 to iterate using &lt;code&gt;await foreach&lt;/code&gt; or easily implement a new asynchronous stream by defining async &lt;code&gt;IAsyncEnumerable&amp;lt;T&amp;gt;&lt;/code&gt; as the method result and using &lt;code&gt;yield return/yield break&lt;/code&gt; just like we did for &lt;code&gt;IEnumerable&amp;lt;T&amp;gt;&lt;/code&gt;, Microsoft standardized the way .NET developers implement asynchronous streams.&lt;/p&gt;
 &lt;p&gt;Even if we don’t realize, we probably use async streams on a daily basis, from Entity Framework Core to ASP.NET Core, it has become an important part of .NET that is now widely adopted.&lt;br&gt;In this article I’m going to show some the most common scenarios I usually face when working directly with &lt;code&gt;IAsyncEnumerable&amp;lt;T&amp;gt;&lt;/code&gt; and how I usually solve them.&lt;/p&gt;

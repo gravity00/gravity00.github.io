@@ -18,7 +18,7 @@
         <category>linq</category>
         <item>
             <guid isPermalink="true">https://code-corner.dev/2024/06/19/NET-9-ToList-vs-ToArray/</guid>
-            <title>.NET 9 - ToList vs ToArray</title>
+            <title>.NET 9 — ToList vs ToArray</title>
             <link>https://code-corner.dev/2024/06/19/NET-9-ToList-vs-ToArray/</link>
             <category>dotnetcore</category>
             <category>csharp</category>
@@ -57,7 +57,7 @@
         </item>
         <item>
             <guid isPermalink="true">https://code-corner.dev/2024/05/25/NET-IAsyncEnumerable-utility-extensions/</guid>
-            <title>.NET - IAsyncEnumerable utility extensions</title>
+            <title>.NET — IAsyncEnumerable utility extensions</title>
             <link>https://code-corner.dev/2024/05/25/NET-IAsyncEnumerable-utility-extensions/</link>
             <category>dotnetcore</category>
             <category>dotnet</category>

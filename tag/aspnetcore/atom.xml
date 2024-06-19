@@ -15,7 +15,7 @@
     <category term="linq" />
     <entry>
         <id>https://code-corner.dev/2024/02/29/NET-Hangfire/</id>
-        <title>.NET - Hangfire</title>
+        <title>.NET — Hangfire</title>
         <link rel="alternate" href="https://code-corner.dev/2024/02/29/NET-Hangfire/"/>
         <content type="html">&lt;p&gt;One common scenario when developing applications is the need to perform background processing than can either be run only once (like sending an email) or scheduled to be run multiple times within a given interval (like doing database housekeeping), usually defined by a &lt;a href=&#34;https://en.wikipedia.org/wiki/Cron&#34;&gt;cron&lt;/a&gt; expression.&lt;/p&gt;
 &lt;p&gt;When I need to implement such requirements my first choice for the last few years as always been &lt;a href=&#34;https://www.hangfire.io/&#34;&gt;Hangfire&lt;/a&gt;.&lt;/p&gt;
