@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://code-corner.dev/2024/06/19/NET-9-ToList-vs-ToArray/</loc>
+    
+    <lastmod>2024-06-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://code-corner.dev/2024/05/25/NET-IAsyncEnumerable-utility-extensions/</loc>
     
     <lastmod>2024-05-25</lastmod>
@@ -184,7 +193,7 @@
 
   <url>
     <loc>https://code-corner.dev/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -192,63 +201,63 @@
   
   <url>
     <loc>https://code-corner.dev/tags/dotnetcore/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/aspnetcore/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/csharp/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/patterns/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/dotnet/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/efcore/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/dapper/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/hangfire/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/tags/linq/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -257,28 +266,28 @@
   
   <url>
     <loc>https://code-corner.dev/categories/tutorial/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/categories/concepts/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/categories/performance/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://code-corner.dev/categories/devops/</loc>
-    <lastmod>2024-05-25</lastmod>
+    <lastmod>2024-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
